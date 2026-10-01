@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kona Water Pros | Reverse Osmosis Water Systems on the Big Island</title>
+<meta name="description" content="Locally run reverse osmosis and whole-home water system installation and filter service for Kona, Captain Cook, Holualoa, Waikoloa, Waimea and Hilo. Call 808-515-7579.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#12354f; --navy-2:#0d2a40; --teal:#5bc4c9; --teal-d:#2a8f96; --mist:#e9f4f5;
+  --ink:#1c2b36; --muted:#5a6b77; --line:#d3e1e4; --bg:#ffffff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0d2a40; --ink:#e8f1f4; --muted:#a9bcc6; --line:#24506c; --mist:#12354f; --navy:#0a2336; --navy-2:#071a28;}
+}
+:root[data-theme="dark"]{--bg:#0d2a40; --ink:#e8f1f4; --muted:#a9bcc6; --line:#24506c; --mist:#12354f; --navy:#0a2336; --navy-2:#071a28;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,6vw,3.7rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0 0 1em;max-width:62ch}
+.btn{display:inline-block;padding:.85em 1.4em;border-radius:10px;font-weight:700;text-decoration:none;font-size:1rem}
+.btn-teal{background:var(--teal);color:#0d2a40}
+.btn-teal:hover{background:#74d2d6}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+/* top bar */
+.top{background:var(--navy-2);color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{font-weight:800;letter-spacing:.08em;color:var(--teal);text-decoration:none;font-size:1rem}
+.top a.tel{font-weight:700;text-decoration:none}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center;padding-top:64px;padding-bottom:72px}
+.hero p{color:#d6e6ee;font-size:1.15rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.drop{width:100%;max-width:270px;justify-self:center;opacity:.95}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:50px}.drop{max-width:120px;order:-1;justify-self:start}}
+
+section{padding:68px 0}
+.mist{background:var(--mist)}
+
+/* systems: stacked rows, not cards */
+.systems{border-top:2px solid var(--navy)}
+.sys{display:grid;grid-template-columns:230px 1fr;gap:10px 30px;padding:26px 0;border-bottom:1px solid var(--line)}
+.sys h3{margin:0}
+.sys small{display:block;color:var(--teal-d);font-weight:700;margin-top:4px}
+.sys p{margin:0}
+@media (max-width:640px){.sys{grid-template-columns:1fr}}
+
+/* facts table */
+.scroll{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;min-width:480px;background:var(--bg)}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--navy);color:#fff;font-weight:700;font-size:.95rem}
+.note{color:var(--muted);font-size:.92rem;margin-top:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:800px){.two{grid-template-columns:1fr}}
+
+/* big certified numbers */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg)}
+.cert{padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cert b{display:block;font-size:2rem;color:var(--teal-d);font-weight:800;line-height:1}
+.cert span{font-size:.92rem;color:var(--muted)}
+
+/* plans + areas */
+.plans li,.areas li{margin-bottom:.5em}
+.areas{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.areas li{margin:0;padding:.45em 1em;border:1.5px solid var(--teal-d);border-radius:999px;font-weight:700}
+
+.about{display:grid;grid-template-columns:1fr 280px;gap:44px;align-items:start}
+.sig{border-left:5px solid var(--teal);padding:6px 0 6px 18px}
+.sig b{display:block;font-size:1.2rem}
+@media (max-width:800px){.about{grid-template-columns:1fr}}
+
+.contact{background:var(--navy);color:#fff;text-align:left}
+.contact p{color:#d6e6ee}
+.contact .big{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:var(--teal);text-decoration:none;display:block;margin:6px 0}
+footer{background:var(--navy-2);color:#a9bcc6;font-size:.85rem;padding:26px 0}
+footer p{max-width:80ch;margin:0 0 .6em}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <a class="brand" href="#top">KONA WATER PROS</a>
+  <a class="tel" href="tel:+18085157579">808-515-7579</a>
+</div></div>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <h1>Better-tasting water, right from your kitchen.</h1>
+    <p>Locally run installation of reverse osmosis and whole-home water systems for Big Island homeowners, with filter changes and maintenance plans to keep them working.</p>
+    <div class="cta">
+      <a class="btn btn-teal" href="tel:+18085157579">Call or text 808-515-7579</a>
+      <a class="btn btn-ghost" href="mailto:spencer@konawaterpros.com">Email Spencer</a>
+    </div>
+  </div>
+  <svg class="drop" viewBox="0 0 120 160" role="img" aria-label="Water drop">
+    <path d="M60 6C60 6 14 62 14 98a46 46 0 0 0 92 0C106 62 60 6 60 6z" fill="#5bc4c9"/>
+    <path d="M38 104a22 22 0 0 0 18 24" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+  </svg>
+</div></header>
+
+<section id="systems"><div class="wrap">
+  <h2>Systems we install</h2>
+  <p>We sell and install the systems ourselves, so one local company handles the equipment, the installation, and the service afterward.</p>
+  <div class="systems">
+    <div class="sys"><div><h3>5-stage under-sink RO</h3><small>Our most popular system</small></div>
+      <p>A compact system under your kitchen sink with its own faucet. Sediment and carbon prefilters protect the RO membrane, and a final filter polishes the water before it reaches your glass.</p></div>
+    <div class="sys"><div><h3>11-stage under-counter RO</h3><small>Our premium drinking-water system</small></div>
+      <p>For homeowners who want more filtration stages than the standard system. Ask us how it compares for your home and water.</p></div>
+    <div class="sys"><div><h3>Whole-home systems</h3><small>Treat the water at the main line</small></div>
+      <p>Filtration for every tap, shower, and appliance in the house. We will take a walk through your home with you to determine what you need, what your goals are for your water system, and recommend what fits.</p></div>
+    <div class="sys"><div><h3>Filter changes and maintenance plans</h3><small>Keep it working as designed</small></div>
+      <p>Filters and membranes have to be replaced on schedule for a system to perform as certified. We can handle it for you on a plan or as needed.</p></div>
+  </div>
+</div></section>
+
+<section class="mist" id="facts"><div class="wrap two">
+  <div>
+    <h2>What is in Kona tap water</h2>
+    <p>North Kona public water met federal and state standards in the County of Hawaii Department of Water Supply 2025 report. Reverse osmosis is an optional extra step at your kitchen tap, not a sign that the public supply is unsafe.</p>
+    <div class="scroll"><table>
+      <tr><th>Substance</th><th>2025 result</th><th>Limit</th></tr>
+      <tr><td>Nitrate</td><td>1.60 ppm max</td><td>10 ppm</td></tr>
+      <tr><td>Fluoride</td><td>0.24 to 0.76 ppm</td><td>4 ppm</td></tr>
+      <tr><td>Chromium</td><td>4.8 ppb max</td><td>100 ppb</td></tr>
+      <tr><td>Sodium</td><td>72 ppm max</td><td>No federal limit</td></tr>
+      <tr><td>Lead</td><td>Not detected at 33 sites</td><td>10 ppb action level</td></tr>
+    </table></div>
+    <p class="note">Source: Hawaii County DWS, 2025 North Kona Water Quality Report (Consumer Confidence Report). System-wide results do not replace testing at your own home, where plumbing can affect taste, metals, or sediment.</p>
+  </div>
+  <div>
+    <h2>What our 5-stage RO is certified to reduce</h2>
+    <p>Our 5-stage system is the GE GXRV40TBN, certified by IAPMO to NSF/ANSI 42, 53 and 58 among other standards.</p>
+    <div class="certs">
+      <div class="cert"><b>99.1%</b><span>Lead</span></div>
+      <div class="cert"><b>96.5%</b><span>Fluoride</span></div>
+      <div class="cert"><b>96%</b><span>Nitrate and nitrite</span></div>
+      <div class="cert"><b>97.0%</b><span>Chromium VI</span></div>
+      <div class="cert"><b>96.8%</b><span>Total dissolved solids</span></div>
+      <div class="cert"><b>98.2%</b><span>Arsenic V</span></div>
+    </div>
+    <p class="note">Results are GE's tested figures under specified conditions and apply only to this model with proper installation and on-schedule filter replacement. Certified claims are limited to those listed on GE's performance data sheet.</p>
+  </div>
+</div></section>
+
+<section id="plans"><div class="wrap two">
+  <div>
+    <h2>Why filtered water, and why not just a pitcher</h2>
+    <p>Pitchers and refrigerator filters are mostly designed for chlorine taste and odor, plus whichever contaminants are listed for that specific cartridge. They are usually not reverse osmosis, so do not assume they reduce fluoride, nitrate, sodium or dissolved solids.</p>
+    <p>Reverse osmosis membranes are extremely fine, with openings far smaller than most microplastic particles. That is why RO is often discussed as a way to reduce them, though results for any specific system depend on its own testing.</p>
+    <p>Whatever you choose, look for certified contaminant claims, and replace filters on schedule.</p>
+  </div>
+  <div>
+    <h2>Free under-sink check</h2>
+    <p>Not sure an RO system will fit under your sink? We will look at the plumbing and cabinet space with you before you decide on anything. The check is free and there is no pressure.</p>
+    <p><a class="btn btn-teal" href="tel:+18085157579">Call or text to schedule</a></p>
+  </div>
+</div></section>
+
+<section class="mist" id="about"><div class="wrap about">
+  <div>
+    <h2>Built on the trades</h2>
+    <p>Kona Water Pros is a small local company with more than 50 years of combined contracting experience between both the mainland and Hawaii. We know how a house is put together: how the plumbing runs, what is behind the cabinet wall, and what a clean installation looks like.</p>
+    <p>That background shapes how we work. We look at your home before we recommend anything, we explain what a system can and cannot do, and we stand behind the installation with service after the sale.</p>
+    <p>We bring a practical, no-nonsense approach to water systems for Big Island families at an affordable cost and with exceptional customer service.</p>
+  </div>
+  <div class="sig"><b>Spencer B. Calvert</b>Water Filtration Consultant<br>808-515-7579<br><a href="mailto:spencer@konawaterpros.com">spencer@konawaterpros.com</a></div>
+</div></section>
+
+<section id="areas"><div class="wrap">
+  <h2>Where we work</h2>
+  <ul class="areas">
+    <li>Kailua-Kona</li><li>Holualoa</li><li>Captain Cook</li><li>Waikoloa</li><li>Waimea</li><li>Hilo</li>
+  </ul>
+  <p style="margin-top:18px">Not on the list? Call and ask. We may still be able to help.</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Talk to Spencer</h2>
+  <p>Call or text, or send an email and we will get back to you.</p>
+  <a class="big" href="tel:+18085157579">808-515-7579</a>
+  <a class="big" style="font-size:1.3rem;color:#fff" href="mailto:spencer@konawaterpros.com">spencer@konawaterpros.com</a>
+</div></section>
+
+<footer><div class="wrap">
+  <p>&copy; Kona Water Pros. Kailua-Kona, Hawaii.</p>
+  <p>Standard installation requires compatible plumbing and cabinet access. Faucet upgrades, repairs, electrical work, corroded valves, drilling and nonstandard adapters may cost extra. Reduction claims vary by exact system, water conditions and maintenance; verify the installed model's current performance data sheet.</p>
+</div></footer>
+</body>
+</html>
