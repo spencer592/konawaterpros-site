@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kona Water Pros | Your Local Kona Drinking-Water Specialist</title>
+<meta name="description" content="Family-owned reverse osmosis and whole-home water system installation and filter service for Kona, Captain Cook, Holualoa, Waikoloa, Waimea and Hilo. Call 808-515-7579.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#12354f; --navy-2:#0d2a40; --teal:#5bc4c9; --teal-d:#2a8f96; --mist:#e9f4f5;
+  --ink:#1c2b36; --muted:#5a6b77; --line:#d3e1e4; --bg:#ffffff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0d2a40; --ink:#e8f1f4; --muted:#a9bcc6; --line:#24506c; --mist:#12354f; --navy:#0a2336; --navy-2:#071a28;}
+}
+:root[data-theme="dark"]{--bg:#0d2a40; --ink:#e8f1f4; --muted:#a9bcc6; --line:#24506c; --mist:#12354f; --navy:#0a2336; --navy-2:#071a28;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,6vw,3.7rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0 0 1em;max-width:62ch}
+.btn{display:inline-block;padding:.85em 1.4em;border-radius:10px;font-weight:700;text-decoration:none;font-size:1rem}
+.btn-teal{background:var(--teal);color:#0d2a40}
+.btn-teal:hover{background:#74d2d6}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+/* top bar */
+.top{background:var(--navy-2);color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{font-weight:800;letter-spacing:.08em;color:var(--teal);text-decoration:none;font-size:1rem}
+.top a.tel{font-weight:700;text-decoration:none}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center;padding-top:64px;padding-bottom:72px}
+.hero p{color:#d6e6ee;font-size:1.15rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.drop{width:100%;max-width:270px;justify-self:center;opacity:.95}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:50px}.drop{max-width:120px;order:-1;justify-self:start}}
+
+section{padding:68px 0}
+.mist{background:var(--mist)}
+
+/* systems: stacked rows, not cards */
+.systems{border-top:2px solid var(--navy)}
+.sys{display:grid;grid-template-columns:230px 1fr;gap:10px 30px;padding:26px 0;border-bottom:1px solid var(--line)}
+.sys h3{margin:0}
+.sys small{display:block;color:var(--teal-d);font-weight:700;margin-top:4px}
+.sys p{margin:0}
+@media (max-width:640px){.sys{grid-template-columns:1fr}}
+
+/* facts table */
+.scroll{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;min-width:480px;background:var(--bg)}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--navy);color:#fff;font-weight:700;font-size:.95rem}
+.note{color:var(--muted);font-size:.92rem;margin-top:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:800px){.two{grid-template-columns:1fr}}
+
+/* big certified numbers */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg)}
+.cert{padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cert b{display:block;font-size:2rem;color:var(--teal-d);font-weight:800;line-height:1}
+.cert span{font-size:.92rem;color:var(--muted)}
+
+/* plans + areas */
+.plans li,.areas li{margin-bottom:.5em}
+.areas{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.areas li{margin:0;padding:.45em 1em;border:1.5px solid var(--teal-d);border-radius:999px;font-weight:700}
+
+.about{display:grid;grid-template-columns:1fr 280px;gap:44px;align-items:start}
+.sig{border-left:5px solid var(--teal);padding:6px 0 6px 18px}
+.sig b{display:block;font-size:1.2rem}
+@media (max-width:800px){.about{grid-template-columns:1fr}}
+
+.contact{background:var(--navy);color:#fff;text-align:left}
+.contact p{color:#d6e6ee}
+.contact .big{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:var(--teal);text-decoration:none;display:block;margin:6px 0}
+footer{background:var(--navy-2);color:#a9bcc6;font-size:.85rem;padding:26px 0}
+footer p{max-width:80ch;margin:0 0 .6em}
+
+.hero p.eyebrow{color:var(--teal);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;margin-bottom:12px}
+.steps{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--bg);border-top:4px solid var(--teal);padding:16px 14px;border-radius:0 0 10px 10px}
+.steps li::before{content:counter(s);display:block;font-weight:800;font-size:1.8rem;color:var(--teal-d);line-height:1}
+.steps b{display:block;margin:6px 0 4px;line-height:1.25}
+.steps span{font-size:.92rem;color:var(--muted);display:block;line-height:1.45}
+.one-visit{margin-top:22px;font-weight:700;font-size:1.1rem;max-width:none}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.ftable td:first-child{font-weight:700;min-width:150px}
+.ftable tr.u td{background:rgba(255,196,60,.12)}
+.ftable td{vertical-align:top;font-size:.96rem}
+.tag{display:inline-block;font-weight:800;font-size:.78rem;padding:.15em .65em;border-radius:999px;letter-spacing:.02em;margin-right:4px}
+.tag.unk{background:#ffe08a;color:#4d3300}
+.tag.nd{background:#c9f0e2;color:#0b5a3f}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:20px 0 26px}
+.lcard{display:block;background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:10px;padding:16px 18px;text-decoration:none}
+.lcard:hover{border-left-color:var(--teal-d)}
+.lcard b{display:block;margin-bottom:6px;line-height:1.3}
+.lcard span{font-size:.92rem;color:var(--muted);display:block;line-height:1.45}
+.lcard small{display:block;margin-top:10px;color:var(--teal-d);font-weight:800;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase}
+.cta-band{background:var(--navy);color:#fff;border-radius:12px;padding:22px 26px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin:10px 0 24px}
+.cta-band b{display:block;font-size:1.2rem;margin-bottom:2px}
+.cta-band span{color:#d6e6ee}
+tr.neg td{background:rgba(214,69,65,.07)}
+tr.pos td{background:rgba(91,196,201,.14)}
+.fine{display:block;margin-top:6px;font-size:.85rem;color:var(--muted);font-weight:400}
+.callouts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.callout{border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:10px;padding:20px 22px;background:var(--mist)}
+.callout h3{margin-bottom:.6em}
+.callout p:last-child{margin-bottom:0}
+@media (max-width:800px){.callouts{grid-template-columns:1fr}}
+.tier{display:inline-block;background:var(--navy);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25em .7em;border-radius:6px;margin-bottom:8px}
+.sys .lbl{margin:14px 0 0;font-weight:800;font-size:.85rem;color:var(--teal-d);text-transform:uppercase;letter-spacing:.04em}
+.chips{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{margin:0;font-size:.88rem;padding:.2em .7em;border:1px solid var(--line);border-radius:999px;background:var(--mist)}
+.sys .plus{margin-top:12px;font-size:.95rem}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <a class="brand" href="#top">KONA WATER PROS</a>
+  <a class="tel" href="tel:+18085157579">808-515-7579</a>
+</div></div>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <p class="eyebrow">Your local Kona drinking-water specialist</p>
+    <h1>Better-tasting water, right from your kitchen.</h1>
+    <p>Family-owned installation of reverse osmosis and whole-home water systems for Big Island homeowners, with filter changes and maintenance plans to keep them working.</p>
+    <div class="cta">
+      <a class="btn btn-teal" href="tel:+18085157579">Call or text 808-515-7579</a>
+      <a class="btn btn-ghost" href="mailto:spencer@konawaterpros.com">Email Spencer</a>
+    </div>
+  </div>
+  <svg class="drop" viewBox="0 0 120 160" role="img" aria-label="Water drop">
+    <path d="M60 6C60 6 14 62 14 98a46 46 0 0 0 92 0C106 62 60 6 60 6z" fill="#5bc4c9"/>
+    <path d="M38 104a22 22 0 0 0 18 24" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+  </svg>
+</div></header>
+
+<section id="systems"><div class="wrap">
+  <h2>Systems we install</h2>
+  <p>We sell and install the systems ourselves, so one local company handles the equipment, the installation, and the service afterward.</p>
+  <div class="systems">
+    <div class="sys"><div><span class="tier">Essential</span><h3>5-stage reverse osmosis</h3><small>Our most affordable RO system</small></div>
+      <div><p>A dependable under-sink reverse osmosis system designed for everyday drinking and cooking water. Multi-stage sediment and carbon filtration prepares the water before the RO membrane performs the primary purification, followed by final carbon filtration for clean, fresh-tasting water.</p></div></div>
+    <div class="sys"><div><span class="tier">Plus</span><h3>Alkaline reverse osmosis</h3><small>Purified water with minerals added back</small></div>
+      <div><p>Everything you get from reverse osmosis, with an additional remineralization stage after purification. The system adds beneficial minerals back into the RO water to improve mineral content and taste.</p><p class="plus"><b>Plus:</b> Alkaline remineralization after RO purification</p></div></div>
+    <div class="sys"><div><span class="tier">Advanced</span><h3>11-stage alkaline + UV reverse osmosis</h3><small>Our most comprehensive drinking-water system</small></div>
+      <div><p>Combines reverse osmosis purification with alkaline remineralization and an additional UV treatment stage. After contaminants are reduced through RO, minerals including calcium, magnesium and potassium are added back, while UV provides an additional treatment barrier for microorganisms.</p><p class="plus"><b>Plus:</b> Calcium, magnesium &amp; potassium remineralization &bull; Alkaline treatment &bull; UV treatment stage</p></div></div>
+    <div class="sys"><div><span class="tier">Premium</span><h3>600 GPD tankless + remineralization</h3><small>High-flow RO with minerals added back</small></div>
+      <div><p>Our premium tankless system combines high-capacity reverse osmosis with remineralization. It delivers purified water on demand without a bulky storage tank, then adds minerals such as calcium and magnesium back into the water for improved taste and mineral content.</p><p class="plus"><b>Plus:</b> Calcium &amp; magnesium remineralization &bull; Tankless design &bull; 600 GPD capacity &bull; Fast on-demand production &bull; Compact footprint &bull; Smart filter monitoring &bull; 2:1 pure-to-drain ratio</p></div></div>
+<div class="sys"><div><h3>Whole-home systems</h3><small>Treat the water at the main line</small></div>
+      <p>Filtration for every tap, shower, and appliance in the house. We will take a walk through your home with you to determine what you need, what your goals are for your water system, and recommend what fits.</p></div>
+    <div class="sys"><div><h3>Filter changes and maintenance plans</h3><small>Keep it working as designed</small></div>
+      <p>Filters and membranes have to be replaced on schedule for a system to perform as certified. We can handle it for you on a plan or as needed.</p></div>
+  </div>
+</div></section>
+
+<section class="mist" id="process"><div class="wrap">
+  <h2>Our installation process</h2>
+  <p>Hiring us should feel predictable. Here is what to expect from first call to finished system.</p>
+  <ol class="steps">
+    <li><b>Free Consultation</b><span>We look at your plumbing, cabinet space and goals, and answer your questions.</span></li>
+    <li><b>Select Your System</b><span>You choose the system that fits your home and your water.</span></li>
+    <li><b>Professional Installation</b><span>We install it cleanly and check every connection.</span></li>
+    <li><b>Water Test</b><span>We test the water from your new system before we leave.</span></li>
+    <li><b>Ongoing Support</b><span>Filter changes and maintenance plans keep it performing.</span></li>
+  </ol>
+  <p class="one-visit">Most standard installations can be completed in a single visit.</p>
+</div></section>
+
+<section id="facts"><div class="wrap">
+  <h2>What is in Kona tap water</h2>
+  <p>We went through the County&rsquo;s 2025 North Kona report line by line. Here is each substance, what the report says, and where it says nothing at all.</p>
+  <p>The County&rsquo;s report concludes that North Kona tap water met all federal and state drinking-water standards. A standard, however, is a legal limit, not a zero. The report shows measurable levels of fluoride, nitrate, barium and chromium, and for several other substances it does not state any results. Our entry-level 5-stage GE reverse osmosis system is certified to reduce several of the substances on this list, including lead, fluoride, nitrate and nitrite, barium and cadmium, giving you an added layer of control over the water you drink and cook with, right at your kitchen tap.</p>
+  <div class="scroll"><table class="ftable">
+      <tr><th>Substance</th><th>What the 2025 report shows</th><th>Legal limit</th></tr>
+      <tr class="u"><td>Chlorine</td><td><span class="tag unk">Not reported &middot; unknown</span> The report lists disinfection byproducts (below), but chlorine itself is not mentioned, so the chlorine level in the water is unknown from the 2025 report.</td><td>&mdash;</td></tr>
+      <tr><td>Disinfection byproducts: THMs</td><td>5.03 ppb highest (2.75 to 5.03 ppb), 2025</td><td>80 ppb</td></tr>
+      <tr><td>Disinfection byproducts: HAAs</td><td>HAA5 0.78 ppb, HAA9 2.98 ppb (2019 sampling)</td><td>Not listed in report</td></tr>
+      <tr><td>Fluoride</td><td>0.76 ppm highest (0.24 to 0.76 ppm), 2025</td><td>4 ppm</td></tr>
+      <tr><td>Lead</td><td><span class="tag nd">Not detected</span> at 33 homes sampled, July 2025. Lead can still enter water from a home&rsquo;s own plumbing.</td><td>10 ppb action level</td></tr>
+      <tr class="u"><td>Arsenic</td><td><span class="tag unk">Not reported &middot; unknown</span></td><td>&mdash;</td></tr>
+      <tr><td>PFAS (&ldquo;forever chemicals&rdquo;)</td><td><span class="tag nd">Not detected</span> 6 regulated PFAS in 2025, and 29 PFAS in 2024 sampling</td><td>PFOA and PFOS: 4 ppt</td></tr>
+      <tr class="u"><td>Nitrates &amp; nitrites</td><td>Nitrate: 1.60 ppm highest (0.56 to 1.60 ppm), 2025.<br>Nitrite: <span class="tag unk">Not reported &middot; unknown</span></td><td>Nitrate: 10 ppm</td></tr>
+      <tr><td>Copper</td><td>0.056 ppm (90th percentile) at 33 homes, July 2025; highest single home 0.356 ppm</td><td>1.3 ppm action level</td></tr>
+      <tr class="u"><td>Chromium / chromium-6</td><td>Total chromium: 4.8 ppb highest (2.1 to 4.8 ppb), 2025.<br>Chromium-6 on its own: <span class="tag unk">Not reported &middot; unknown</span></td><td>Total chromium: 100 ppb</td></tr>
+      <tr class="u"><td>Cadmium</td><td><span class="tag unk">Not reported &middot; unknown</span></td><td>&mdash;</td></tr>
+      <tr><td>Barium</td><td>0.0059 ppm highest, 2025</td><td>2 ppm</td></tr>
+      <tr class="u"><td>Selenium</td><td><span class="tag unk">Not reported &middot; unknown</span></td><td>&mdash;</td></tr>
+      <tr class="u"><td>Pesticides &amp; herbicides</td><td><span class="tag unk">Not reported &middot; unknown</span></td><td>&mdash;</td></tr>
+      <tr class="u"><td>Volatile organic compounds (VOCs)</td><td><span class="tag unk">Not reported &middot; unknown</span></td><td>&mdash;</td></tr>
+      <tr class="u"><td>Microplastics</td><td><span class="tag unk">Not reported &middot; unknown</span> No microplastics results appear in the report.</td><td>&mdash;</td></tr>
+      <tr><td>Also reported: sodium</td><td>72 ppm highest (53 to 72 ppm), 2025. EPA advises 30 to 60 ppm for taste.</td><td>No federal limit</td></tr>
+    </table></div>
+  <p class="note"><b>How to read this:</b> the County&rsquo;s report lists the substances it detected during the year. If a substance is not listed, the report does not say whether it was tested and not found, or not tested at all, so we mark it unknown instead of guessing. Results cover the whole North Kona system and can differ at your own tap. Source: Hawaii County DWS, 2025 North Kona Water Quality Report. <a href="https://www.hawaiidws.org/CCRNKona2025.pdf" rel="noopener">Read the full report</a>.</p>
+  <div style="margin-top:56px">
+  <div>
+    <h2>What our entry-level 5-stage RO is certified to reduce</h2>
+    <p>Our 5-stage system is the GE GXRV40TBN, certified by IAPMO to NSF/ANSI 42, 53 and 58 among other standards.</p>
+    <div class="certs">
+      <div class="cert"><b>99.1%</b><span>Lead</span></div>
+      <div class="cert"><b>96.5%</b><span>Fluoride</span></div>
+      <div class="cert"><b>96%</b><span>Nitrate and nitrite</span></div>
+      <div class="cert"><b>97.0%</b><span>Chromium VI</span></div>
+      <div class="cert"><b>96.8%</b><span>Total dissolved solids</span></div>
+      <div class="cert"><b>98.2%</b><span>Arsenic V</span></div>
+    </div>
+    <p class="note">Results are GE's tested figures under specified conditions and apply only to this model with proper installation and on-schedule filter replacement. Certified claims are limited to those listed on GE's performance data sheet. GE has not published a certified microplastics rating for this model. That being said, the reverse osmosis membrane in this system is extremely fine, with openings far smaller than most microplastic particles.</p>
+  </div>
+</div>
+</div></section>
+
+<section class="mist" id="plans"><div class="wrap two">
+  <div>
+    <h2>Why filtered water, and why not just a pitcher</h2>
+    <p>Pitchers and refrigerator filters are mostly designed for chlorine taste and odor, plus whichever contaminants are listed for that specific cartridge. They are usually not reverse osmosis, so do not assume they reduce fluoride, nitrate, sodium or dissolved solids.</p>
+    <p>Reverse osmosis membranes are extremely fine, with openings far smaller than most microplastic particles. That is why RO is often discussed as a way to reduce them, though results for any specific system depend on its own testing.</p>
+    <p>Whatever you choose, look for certified contaminant claims, and replace filters on schedule.</p>
+  </div>
+  <div>
+    <h2>Free under-sink check</h2>
+    <p>Not sure an RO system will fit under your sink? We will look at the plumbing and cabinet space with you before you decide on anything. The check is free and there is no pressure.</p>
+    <p><a class="btn btn-teal" href="tel:+18085157579">Call or text to schedule</a></p>
+  </div>
+</div></section>
+
+<section id="compare"><div class="wrap">
+  <h2>How RO compares with other ways to get drinking water</h2>
+  <p>Many households rely on bottled water, jugs, delivery, a refrigerator filter or a pitcher. Here is how the common options compare.</p>
+  <div class="scroll"><table>
+    <tr><th>Option</th><th>Ongoing cost</th><th>Convenience</th><th>Good to know</th></tr>
+    <tr><td>Bottled water and jugs</td><td>Bought again and again</td><td>Heavy to haul, store and return</td><td>Plastic particles have been found in bottled water. A 2024 study in <i>PNAS</i> measured about 240,000 per liter on average across three popular brands, mostly nanoplastics.</td></tr>
+    <tr><td>Delivered 5-gallon jugs</td><td>Recurring purchase or delivery fees</td><td>Heavy to lift, with storage space and a delivery schedule to manage</td><td>Plastic jugs can release microplastic particles into the water.</td></tr>
+    <tr><td>Glass bottles</td><td>Premium price per gallon, bought again and again</td><td>Heavy and breakable, with bottles to return or recycle</td><td>Typically among the most expensive ways to buy drinking water.</td></tr>
+    <tr class="neg"><td>Refrigerator filter</td><td>Replacement cartridges on schedule</td><td>Built in, but only filters water from the fridge</td><td><b>Most are certified only for chlorine taste and odor.</b> They typically do not reduce fluoride, nitrate or dissolved solids, which our RO system is certified to reduce.<span class="fine">(Fridge filters vary by brand and model, and some are certified for additional contaminants.)</span></td></tr>
+    <tr class="neg"><td>Pitcher filter</td><td>Replacement cartridges on schedule</td><td>Small capacity, so constant refilling</td><td><b>Not certified to reduce fluoride, nitrate or nitrite, or dissolved solids,</b> all of which reverse osmosis is certified to reduce. Some models are not certified for lead.<span class="fine">(Certifications vary by filter model.)</span></td></tr>
+    <tr class="pos"><td><b>Under-sink RO</b></td><td>One-time installation, then periodic filter changes</td><td>Filtered water from its own faucet, with nothing to haul</td><td>Designed to reduce a wide range of dissolved substances, with certified performance data published for specific models. Replace filters on schedule for best results.</td></tr>
+  </table></div>
+  <div class="callouts">
+    <div class="callout">
+      <h3>How much water do you need?</h3>
+      <p>The National Academies of Sciences, Engineering, and Medicine puts adequate total water intake at about <b>3.7 liters (15.5 cups) a day for men</b> and <b>2.7 liters (11.5 cups) for women</b>. That counts water from food and all beverages, and roughly 20% usually comes from food.</p>
+      <p>Needs rise with body size, activity and heat, so active people in Hawaii&rsquo;s climate often need more. Since you drink this much water every day, where it comes from matters.</p>
+    </div>
+    <div class="callout">
+      <h3>Do the math on a 5-gallon jug</h3>
+      <p>A 2024 study in <i>PNAS</i> found about <b>240,000 plastic particles per liter</b> of bottled water on average, mostly nanoplastics, across three popular brands (110,000 to 370,000 depending on the brand).</p>
+      <p>A 5-gallon jug holds about 19 liters. At that average, the math works out to roughly <b>4.5 million micro- and nanoplastic particles per jug</b>, if jugs behave like the bottles tested. Delivered jugs were not part of that study, so this is an estimate, not a measurement.</p>
+    </div>
+  </div>
+  <p class="note">Costs vary by household. We are glad to walk through the numbers for your home.</p>
+</div></section>
+
+<section class="mist" id="learn"><div class="wrap">
+  <h2>Learn more about your water</h2>
+  <p>Do not just take our word for it. Here are independent sources worth a look.</p>
+  <div class="lgrid">
+    <a class="lcard" href="https://www.hubermanlab.com/episode/how-to-optimize-your-water-quality-and-intake-for-health" target="_blank" rel="noopener"><b>How to Optimize Your Water Quality &amp; Intake for Health</b><span>A long-form episode covering tap water, water filters, and different water types, including reverse osmosis.</span><small>Watch &middot; Huberman Lab</small></a>
+    <a class="lcard" href="https://www.hubermanlab.com/episode/the-effects-of-microplastics-on-your-health-how-to-reduce-them" target="_blank" rel="noopener"><b>The Effects of Microplastics on Your Health &amp; How to Reduce Them</b><span>What microplastics are, where they come from, and tools for reducing exposure, including plastic water bottles and water filters.</span><small>Watch &middot; Huberman Lab</small></a>
+    <a class="lcard" href="https://foundmyfitness.com/episodes/reduce-microplastics-exposure" target="_blank" rel="noopener"><b>How to Reduce Your Exposure to Harmful Microplastics</b><span>Dr. Rhonda Patrick on bottled water, plastic-related chemicals, and whether reverse osmosis systems can remove microplastics from water.</span><small>Watch &middot; FoundMyFitness</small></a>
+    <a class="lcard" href="https://www.youtube.com/watch?v=aVdWqbpbv_Y" target="_blank" rel="noopener"><b>How Does Reverse Osmosis Work?</b><span>A short explainer video on the reverse osmosis process.</span><small>Watch &middot; YouTube, Sydney Water</small></a>
+  </div>
+  <div class="lgrid">
+    <a class="lcard" href="https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water" target="_blank" rel="noopener"><b>Basic Information About Lead in Drinking Water</b><span>How lead can get into water, often from home plumbing, and steps you can take.</span><small>Read &middot; U.S. EPA</small></a>
+    <a class="lcard" href="https://www.epa.gov/ground-water-and-drinking-water/home-drinking-water-filtration-fact-sheet" target="_blank" rel="noopener"><b>Home Drinking Water Filtration Fact Sheet</b><span>Helps homeowners understand filtration systems and weigh their options.</span><small>Read &middot; U.S. EPA</small></a>
+    <a class="lcard" href="https://www.epa.gov/water-research/consumer-tool-identifying-point-use-and-pitcher-filters-certified-reduce-lead" target="_blank" rel="noopener"><b>Find Filters Certified to Reduce Lead</b><span>EPA&rsquo;s consumer tool for identifying certified point-of-use and pitcher filters.</span><small>Tool &middot; U.S. EPA</small></a>
+    <a class="lcard" href="https://www.hawaiidws.org/CCRNKona2025.pdf" target="_blank" rel="noopener"><b>2025 North Kona Water Quality Report</b><span>The County report behind the numbers in our water table.</span><small>Read &middot; Hawaii County DWS</small></a>
+  </div>
+  <div class="cta-band"><div><span>Call or text for a free under-sink check. We will look at your plumbing and answer your questions, with no pressure.</span></div><a class="btn btn-teal" href="tel:+18085157579">Call or text 808-515-7579</a></div>
+  <p class="note">We are happy to share these independent resources to help you learn more about your water. The content and views belong to their creators, and we hope you find them helpful.</p>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>Who we are</h2>
+    <p>Kona Water Pros is a family-owned business with a combined 60 years of experience in construction. Over the years we have served hundreds of customers, and we make sure every one of them is taken care of, just as we would look after our own family.</p>
+    <p>That background shapes how we work. We know how a house is put together: how the plumbing runs, what is behind the cabinet wall, and what a clean installation looks like. We look at your home before we recommend anything, we explain what a system can and cannot do, and we stand behind the installation with service after the sale.</p>
+    <p>We bring a practical, no-nonsense approach to water systems for Big Island families, at an affordable cost and with exceptional customer service.</p>
+  </div>
+  <div class="sig"><b>Spencer B. Calvert</b>Water Filtration Consultant<br>808-515-7579<br><a href="mailto:spencer@konawaterpros.com">spencer@konawaterpros.com</a></div>
+</div></section>
+
+<section class="mist" id="areas"><div class="wrap">
+  <h2>Where we work</h2>
+  <ul class="areas">
+    <li>Kailua-Kona</li><li>Holualoa</li><li>Captain Cook</li><li>Waikoloa</li><li>Waimea</li><li>Hilo</li>
+  </ul>
+  <p style="margin-top:18px">Not on the list? Call and ask. We may still be able to help.</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Talk to Spencer</h2>
+  <p>Call or text, or send an email and we will get back to you.</p>
+  <a class="big" href="tel:+18085157579">808-515-7579</a>
+  <a class="big" style="font-size:1.3rem;color:#fff" href="mailto:spencer@konawaterpros.com">spencer@konawaterpros.com</a>
+</div></section>
+
+<footer><div class="wrap">
+  <p>&copy; Kona Water Pros. Kailua-Kona, Hawaii.</p>
+  <p>Standard installation requires compatible plumbing and cabinet access. Faucet upgrades, repairs, electrical work, corroded valves, drilling and nonstandard adapters may cost extra. Reduction claims vary by exact system, water conditions and maintenance; verify the installed model's current performance data sheet.</p>
+</div></footer>
+</body>
+</html>
